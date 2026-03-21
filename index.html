@@ -7,81 +7,85 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="layout">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="fotoperfil.webp" alt="Foto de perfil" class="profile-pic">
-        <h2>Juanita Martínez</h2>
-        <p class="status">Emocionalmente estable</p>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Âme</h1>
+    <nav>
+      <ul>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#ia">Asistente IA</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Tu espacio seguro para crecer emocionalmente</h2>
+      <p>Registra tu progreso, conversa con nuestra IA empática y conecta con profesionales de la salud mental.</p>
+      <a href="login.html" class="btn">Inicia Sesión</a>
+    </div>
+    <div class="hero-img">
+      <img src="naturaleza.jpg" alt="Bienestar naturaleza">
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos" class="section">
+    <h3>Recursos de Bienestar</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="meditacion.jpg" alt="Meditación">
+        <p>Meditación guiada</p>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#salud">Mi salud</a></li>
-          <li><a href="#ia">Chat IA</a></li>
-          <li><a href="#profesionales">Profesionales</a></li>
-          <li><a href="#comunidad">Comunidad</a></li>
-          <li><a href="#config">Configuración</a></li>
-          <li><a href="#logout">Cerrar sesión</a></li>
-        </ul>
-      </nav>
-    </aside>
+      <div class="card">
+        <img src="respiracion.jpg" alt="Respiración">
+        <p>Ejercicios de respiración</p>
+      </div>
+      <div class="card">
+        <img src="articulos.avif" alt="Artículos">
+        <p>Artículos sobre ansiedad</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main content -->
-    <main class="main">
-      <header class="welcome">
-        <h1>Hola, Juanita 👋</h1>
-        <p>Tu bienestar es prioridad</p>
-      </header>
+  <!-- Comunidad -->
+  <section id="comunidad" class="section">
+    <h3>Comunidad</h3>
+    <div class="post">
+      <img src="sunset.jpg" alt="Publicación comunidad">
+      <p>“Hoy me siento un poco abrumada…”</p>
+      <div class="actions">
+        <span>❤️ 23</span>
+        <span>💬 5</span>
+      </div>
+      <button class="btn">Comentar</button>
+    </div>
+  </section>
 
-      <!-- Sección IA -->
-      <section id="ia" class="card">
-        <h3>Apoyo IA</h3>
-        <p>Estoy aquí para escucharte y apoyarte en lo que necesites.</p>
-        <button class="btn">Hablar con IA</button>
-      </section>
+  <!-- Asistente IA -->
+  <section id="ia" class="section">
+    <h3>Asistente IA</h3>
+    <p>Un chat empático que te escucha y te acompaña, siempre recordando que no reemplaza la terapia profesional.</p>
+    <button class="btn">Abrir Chat</button>
+  </section>
 
-      <!-- Sección Profesionales -->
-      <section id="profesionales" class="card">
-        <h3>Encuentra a tu profesional</h3>
-        <div class="pro-list">
-          <div class="pro-item">
-            <img src="chica1.avif" alt="Laura Fernández">
-            <h4>Laura Fernández</h4>
-            <p>Psicóloga Clínica — $60 USD</p>
-            <button class="btn">Agendar cita</button>
-          </div>
-          <div class="pro-item">
-            <img src="chico1.jpg" alt="Marcos Pérez">
-            <h4>Marcos Pérez</h4>
-            <p>Ansiedad / Estrés — $55 USD</p>
-            <button class="btn">Agendar cita</button>
-          </div>
-          <div class="pro-item">
-            <img src="chica2.jpg" alt="Sara González">
-            <h4>Sara González</h4>
-            <p>Cognitivo-Conductual — $65 USD</p>
-            <button class="btn">Agendar cita</button>
-          </div>
-        </div>
-      </section>
+  <!-- Servicios Premium -->
+  <section id="servicios" class="section">
+    <h3>Servicios Premium</h3>
+    <p>Accede a sesiones con psicólogos certificados y planes de suscripción.</p>
+    <button class="btn">Ver Planes</button>
+  </section>
 
-      <!-- Sección Comunidad -->
-      <section id="comunidad" class="card">
-        <h3>Comunidad</h3>
-        <div class="post">
-          <img src="img/sunset.jpg" alt="Publicación comunidad" class="post-img">
-          <p>“Hoy me siento un poco abrumada…”</p>
-          <div class="actions">
-            <span>❤️ 23</span>
-            <span>💬 5</span>
-          </div>
-          <button class="btn">Comentar</button>
-        </div>
-      </section>
-    </main>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Menta - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
+
 
 
