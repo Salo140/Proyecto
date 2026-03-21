@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Âme</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Bienestar</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- SIDEBAR -->
+  <div class="layout">
+    <!-- Sidebar -->
     <aside class="sidebar">
-        <h2>Âme</h2>
-        <p>Esta bien sentirse trsite, abraza y ama todas tus emociones.</p>
-
-        <div class="profile">
-            <img src="fotoperfil.webp" alt="user">
-            <h3>Juanita</h3>
-            <p>😊 Estable</p>
-        </div>
-
-        <nav>
-            <ul>
-                <li>🧠 Mi salud</li>
-                <li>🤖 Chat IA</li>
-                <li>👩‍⚕️ Profesionales</li>
-                <li>👥 Comunidad</li>
-                <li>⚙️ Configuración</li>
-            </ul>
-        </nav>
+      <div class="profile">
+        <h2>Juanita</h2>
+        <p class="status">Emocionalmente estable</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#salud">Mi salud</a></li>
+          <li><a href="#ia">Chat IA</a></li>
+          <li><a href="#profesionales">Profesionales</a></li>
+          <li><a href="#comunidad">Comunidad</a></li>
+          <li><a href="#config">Configuración</a></li>
+          <li><a href="#logout">Cerrar sesión</a></li>
+        </ul>
+      </nav>
     </aside>
 
-    <!-- MAIN -->
+    <!-- Main content -->
     <main class="main">
-
+      <header class="welcome">
         <h1>Hola, Juanita 👋</h1>
-        <p class="subtitle">Tu bienestar es prioridad</p>
+        <p>Tu bienestar es prioridad</p>
+      </header>
 
-        <!-- IA CARD -->
-        <section class="card">
-            <h2>🤖 Apoyo IA</h2>
-            <p>Estoy aquí para escucharte</p>
-            <button>Hablar con IA</button>
-        </section>
+      <!-- Sección IA -->
+      <section id="ia" class="card">
+        <h3>Apoyo IA</h3>
+        <p>Estoy aquí para escucharte y apoyarte en lo que necesites.</p>
+        <button class="btn">Hablar con IA</button>
+      </section>
 
-        <!-- PROFESIONALES -->
-        <section class="card">
-            <h2>👩‍⚕️ Profesionales</h2>
+      <!-- Sección Profesionales -->
+      <section id="profesionales" class="card">
+        <h3>Profesionales</h3>
+        <div class="pro-list">
+          <div class="pro-item">
+            <h4>Laura Fernández</h4>
+            <p>Psicóloga Clínica — $60 USD</p>
+            <button class="btn">Agendar cita</button>
+          </div>
+          <div class="pro-item">
+            <h4>Marcos Pérez</h4>
+            <p>Ansiedad / Estrés — $55 USD</p>
+            <button class="btn">Agendar cita</button>
+          </div>
+          <div class="pro-item">
+            <h4>Sara González</h4>
+            <p>Cognitivo-Conductual — $65 USD</p>
+            <button class="btn">Agendar cita</button>
+          </div>
+        </div>
+      </section>
 
-            <div class="prof">
-                <p><strong>Laura Fernández</strong></p>
-                <span>Psicóloga Clínica</span>
-                <button>Agendar</button>
-            </div>
-
-            <div class="prof">
-                <p><strong>Marcos Pérez</strong></p>
-                <span>Ansiedad / Estrés</span>
-                <button>Agendar</button>
-            </div>
-        </section>
-
-        <!-- COMUNIDAD -->
-        <section class="card">
-            <h2>👥 Comunidad</h2>
-            <p>“Hoy me siento un poco abrumada…”</p>
-            <button>Comentar</button>
-        </section>
-
+      <!-- Sección Comunidad -->
+      <section id="comunidad" class="card">
+        <h3>Comunidad</h3>
+        <div class="post">
+          <p>“Hoy me siento un poco abrumada…”</p>
+          <button class="btn">Comentar</button>
+        </div>
+      </section>
     </main>
-
-</div>
-
+  </div>
 </body>
 </html>
