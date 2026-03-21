@@ -97,9 +97,10 @@ body {
 }
 
 .pro-item img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: cover;
 }
 
 /* Botón */
@@ -126,9 +127,10 @@ body {
 }
 
 .post-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: cover;
 }
 
 .actions {
