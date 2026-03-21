@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fdfcf7; /* beige muy claro */
+  background: #fdfcf7; /* beige claro */
   color: #2d3436;
 }
 
@@ -22,11 +22,15 @@ body {
 }
 
 .profile {
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.profile h2 {
-  font-size: 1.4rem;
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .status {
@@ -76,7 +80,7 @@ body {
 
 .card h3 {
   margin-bottom: 10px;
-  color: #2e7d32; /* acento verde */
+  color: #2e7d32;
 }
 
 /* Profesionales */
@@ -86,9 +90,16 @@ body {
 }
 
 .pro-item {
-  background: #fdfcf7; /* beige suave */
+  background: #fdfcf7;
   padding: 15px;
   border-radius: 8px;
+  text-align: center;
+}
+
+.pro-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /* Botón */
@@ -104,7 +115,7 @@ body {
 }
 
 .btn:hover {
-  background: #66bb6a; /* verde más claro */
+  background: #66bb6a;
 }
 
 /* Comunidad */
@@ -113,4 +124,18 @@ body {
   padding: 15px;
   border-radius: 8px;
 }
+
+.post-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+  color: #2e7d32;
+}
+
 
