@@ -84,6 +84,90 @@
   <footer>
     <p>&copy; 2026 Menta - Todos los derechos reservados</p>
   </footer>
+  <!-- Botón flotante para abrir chat -->
+<button id="ia-toggle-btn" class="ia-toggle-btn" title="Abrir Asistente IA">
+  💬 Chat IA
+</button>
+
+<!-- Modal del Chat -->
+<div id="ia-modal" class="ia-modal">
+  <!-- Encabezado del modal -->
+  <div class="ia-modal-header">
+    <div class="ia-header-content">
+      <h3>Âme - Asistente IA</h3>
+      <p class="ia-subtitle">Tu compañero empático 💙</p>
+    </div>
+    <button id="ia-close-btn" class="ia-close-btn">✕</button>
+  </div>
+
+  <!-- Área de mensajes -->
+  <div id="ia-messages" class="ia-messages">
+    <!-- Los mensajes aparecerán aquí -->
+    <div class="ia-message ia-bot-message">
+      <p>Hola 👋 Soy Âme, tu asistente IA empático. Estoy aquí para escucharte, apoyarte y recordarte que tu bienestar es importante.</p>
+      <p style="font-size: 0.9rem; margin-top: 8px; color: #666;">¿Cómo te sientes hoy?</p>
+    </div>
+  </div>
+
+  <!-- Alerta de Crisis (se muestra cuando se detecta) -->
+  <div id="ia-crisis-alert" class="ia-crisis-alert" style="display: none;">
+    <div class="ia-crisis-header">
+      🚨 <strong>Necesitamos Ayuda Profesional</strong>
+    </div>
+    <p class="ia-crisis-text">
+      Parece que estás pasando por un momento difícil. <strong>No estás solo.</strong> Aquí hay líneas de emergencia disponibles:
+    </p>
+    <div id="ia-emergency-lines" class="ia-emergency-lines">
+      <!-- Las líneas aparecerán aquí -->
+    </div>
+    <p style="font-size: 0.85rem; margin-top: 10px; color: #d32f2f;">
+      ⚠️ Recuerda: Yo soy una IA y no puedo reemplazar la ayuda profesional. Por favor, contacta a un profesional de salud mental.
+    </p>
+  </div>
+
+  <!-- Input para escribir mensajes -->
+  <div class="ia-input-area">
+    <div class="ia-country-selector">
+      <label for="ia-country">País:</label>
+      <select id="ia-country">
+        <option value="colombia">Colombia 🇨🇴</option>
+        <option value="mexico">México 🇲🇽</option>
+        <option value="argentina">Argentina 🇦🇷</option>
+        <option value="peru">Perú 🇵🇪</option>
+        <option value="chile">Chile 🇨🇱</option>
+        <option value="brasil">Brasil 🇧🇷</option>
+        <option value="spain">España 🇪🇸</option>
+        <option value="usa">USA 🇺🇸</option>
+        <option value="mundial">Líneas Mundiales 🌍</option>
+      </select>
+    </div>
+
+    <div class="ia-input-wrapper">
+      <input 
+        type="text" 
+        id="ia-input" 
+        class="ia-input" 
+        placeholder="Escribe tu mensaje aquí..." 
+        autocomplete="off"
+      >
+      <button id="ia-send-btn" class="ia-send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Footer con descargo -->
+  <div class="ia-footer">
+    <p>
+      ℹ️ <small>
+        Este chat NO reemplaza terapia profesional. 
+        <a href="#" style="color: #2e7d32; text-decoration: none;">Ver políticas</a>
+      </small>
+    </p>
+  </div>
+</div>
+
+<!-- Script de lógica (carga después de este HTML) -->
+<script src="emergency-lines.js"></script>
+<script src="ia-logic.js"></script>
 </body>
 </html>
 
