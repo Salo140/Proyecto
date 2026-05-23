@@ -40,4 +40,4 @@ npm run dev
 | DELETE | /api/citas/:id | Eliminar una cita |
 
 ## Captura de pantalla
-![Interfaz de gestión de citas](captura.png)
+![Interfaz de gestión de citas](captura2.png)
