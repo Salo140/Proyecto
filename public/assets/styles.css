@@ -1,0 +1,176 @@
+/* ── Variables ── */
+:root {
+  --verde:        #2d6a4f;
+  --verde-medio:  #40916c;
+  --verde-claro:  #52b788;
+  --verde-suave:  #d8f3dc;
+  --rojo:         #e53935;
+  --rojo-suave:   #ffebee;
+  --gris:         #555;
+  --gris-claro:   #f5f5f5;
+}
+
+/* ── Reset básico ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, var(--verde) 0%, var(--verde-claro) 100%);
+  color: white;
+  padding: 32px 40px;
+  text-align: center;
+}
+header h1 { font-size: 1.9rem; margin-bottom: 6px; }
+header p  { opacity: 0.85; font-size: 1rem; }
+
+/* ── Main ── */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* ── Mensaje de estado ── */
+.mensaje {
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: opacity 0.4s ease;
+}
+.mensaje.exito  { background: var(--verde-suave); color: var(--verde);  border-left: 4px solid var(--verde-claro); }
+.mensaje.error  { background: var(--rojo-suave);  color: var(--rojo);   border-left: 4px solid var(--rojo); }
+.oculto { display: none !important; }
+
+/* ── Secciones ── */
+.seccion-form,
+.seccion-tabla {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  margin-bottom: 28px;
+}
+.seccion-form h2,
+.seccion-tabla h2 {
+  color: var(--verde);
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--verde-suave);
+}
+
+/* ── Formulario ── */
+.form-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.form-grupo label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+}
+.form-grupo input {
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.93rem;
+  transition: border-color 0.2s;
+}
+.form-grupo input:focus {
+  outline: none;
+  border-color: var(--verde-claro);
+}
+.form-grupo input.invalido { border-color: var(--rojo); }
+.error-campo {
+  font-size: 0.8rem;
+  color: var(--rojo);
+  min-height: 16px;
+}
+
+/* ── Botones ── */
+.btn {
+  padding: 11px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+.btn-primario            { background: var(--verde);       color: white; }
+.btn-primario:hover      { background: var(--verde-medio); }
+.btn-primario:disabled   { opacity: 0.6; cursor: not-allowed; }
+
+.btn-toggle              { background: var(--verde-suave); color: var(--verde);  font-size: 0.82rem; padding: 6px 12px; }
+.btn-toggle:hover        { background: var(--verde-claro); color: white; }
+.btn-toggle.no-disp      { background: #fff3e0; color: #e65100; }
+.btn-toggle.no-disp:hover{ background: #ffe0b2; }
+
+.btn-eliminar            { background: var(--rojo-suave);  color: var(--rojo);   font-size: 0.82rem; padding: 6px 12px; }
+.btn-eliminar:hover      { background: var(--rojo);        color: white; }
+
+/* ── Tabla ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+thead th {
+  background: var(--verde-suave);
+  color: var(--verde);
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+}
+tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.15s; }
+tbody tr:hover { background: #fafafa; }
+tbody td { padding: 12px 14px; vertical-align: middle; }
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.badge.confirmada    { background: var(--verde-suave); color: var(--verde); }
+.badge.no-disponible { background: #fff3e0;            color: #e65100; }
+
+.acciones { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.texto-gris { color: #aaa; font-size: 0.95rem; }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 640px) {
+  .form-fila { grid-template-columns: 1fr; }
+  table      { font-size: 0.82rem; }
+  thead th, tbody td { padding: 8px 10px; }
+}
