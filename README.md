@@ -3,4 +3,6 @@ Proyecto curso de Programación Web
 
 **Integrantes**
 Vanessa Ospina Ibarra
-Salomé Caicedo
+Salomé Caicedo Santamaría
+
+
