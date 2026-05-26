@@ -1,0 +1,20 @@
+[33mff9f576[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/ia-assistant[m[33m)[m Integrate AI securely with env variables
+[33m844025c[m feat: agregar lógica principal del chat IA con detección de crisis
+[33m7702107[m feat: agregar estilos CSS del chat IA integrados con paleta verde
+[33m46887ce[m feat: crear HTML del modal de chat IA
+[33m9718fa1[m Cambio de h3 por h2 en las secciones
+[33m4ef39a2[m Adaptación de la página a cualquier pantalla
+[33m65073a9[m Agregar prompt técnico
+[33m7b06edb[m Corregir imagen preguntas
+[33mfc0c27a[m Actualizar README
+[33mb8921d4[m Agregar imagen preguntas
+[33m78d2e34[m Agregar decisiones del proyecto
+[33m99e1aee[m Agrega archivo DECISIONES
+[33me54ee30[m[33m ([m[1;32mfeature/avance1[m[33m)[m nuevo frontend
+[33m18f4800[m adicione fotos
+[33m97443aa[m nueva actualizacion de frontend
+[33m5337816[m actualizacion titulo
+[33m9be9f9f[m actualizacion colores
+[33m25e5b90[m actualizacion primer commit
+[33mdb439af[m primer commit
+[33m5c40e87[m Initial commit
