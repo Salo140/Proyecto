@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Citas - Âme</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🗓️ Gestión de Citas — Âme</h1>
+    <p>Administra las citas de la plataforma</p>
+  </header>
+
+  <main>
+
+    <!-- Mensaje de estado (errores y éxitos) -->
+    <div id="mensaje" class="mensaje oculto"></div>
+
+    <!-- Formulario para crear cita -->
+    <section class="seccion-form">
+      <h2>➕ Nueva cita</h2>
+      <form id="formCita" novalidate>
+
+        <div class="form-fila">
+          <div class="form-grupo">
+            <label for="inputCliente">Cliente *</label>
+            <input type="text" id="inputCliente" placeholder="Nombre del cliente">
+            <span class="error-campo" id="errorCliente"></span>
+          </div>
+          <div class="form-grupo">
+            <label for="inputPsicologo">Psicólogo *</label>
+            <input type="text" id="inputPsicologo" placeholder="Nombre del psicólogo">
+            <span class="error-campo" id="errorPsicologo"></span>
+          </div>
+        </div>
+
+        <div class="form-fila">
+          <div class="form-grupo">
+            <label for="inputFecha">Fecha *</label>
+            <input type="date" id="inputFecha">
+            <span class="error-campo" id="errorFecha"></span>
+          </div>
+          <div class="form-grupo">
+            <label for="inputHora">Hora *</label>
+            <input type="time" id="inputHora">
+            <span class="error-campo" id="errorHora"></span>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="inputMotivo">Motivo (opcional)</label>
+          <input type="text" id="inputMotivo" placeholder="Ej: Manejo de ansiedad">
+        </div>
+
+        <button type="submit" id="btnAgregar" class="btn btn-primario">Agregar cita</button>
+
+      </form>
+    </section>
+
+    <!-- Tabla de citas -->
+    <section class="seccion-tabla">
+      <h2>📋 Citas registradas</h2>
+      <div id="contenedorTabla">
+        <p id="mensajeTabla" class="texto-gris">Cargando citas...</p>
+        <table id="tablaCitas" class="oculto">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Psicólogo</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Motivo</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTabla"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Âme — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
